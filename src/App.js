@@ -22,8 +22,8 @@ function App() {
       <HashRouter>
         <div className="container1">
           <nav className="nav-main">
-            <ul>
-              <li>
+            <ul className="nav-ul">
+              <li className="nav-li">
                 <NavLink to="/">
                   <ButtonContainer>
                     <img src={logo} alt="home" width="40px" height="40px" />
@@ -31,31 +31,31 @@ function App() {
                   </ButtonContainer>
                 </NavLink>
               </li>
-              <li>
+              <li className="nav-li">
                 <NavLink to="/cases">cases</NavLink>
               </li>
-              <li>
+              <li className="nav-li">
                 <NavLink to="/cpu">Cpu</NavLink>
               </li>
-              <li>
+              <li className="nav-li">
                 <NavLink to="/graphics">Graphic Cards</NavLink>
               </li>
-              <li>
+              <li className="nav-li">
                 <NavLink to="/harddrives">Hard Drives</NavLink>
               </li>
-              <li>
+              <li className="nav-li">
                 <NavLink to="/keyboards">Keyboards</NavLink>
               </li>
-              <li>
+              <li className="nav-li">
                 <NavLink to="/mainboards">Mainboards</NavLink>
               </li>
-              <li>
+              <li className="nav-li">
                 <NavLink to="/mouses">Mouses</NavLink>
               </li>
-              <li>
+              <li className="nav-li">
                 <NavLink to="/ram">Ram</NavLink>
               </li>
-              <li>
+              <li className="nav-li">
                 <NavLink to="/cart">
                   <ButtonContainer>
                     <img src={cart} alt="cart" width="40px" height="40px" />

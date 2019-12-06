@@ -1,45 +1,36 @@
 import React, { Component } from "react";
-import { storeProducts } from "../data";
+import data from "../data";
+
+const caseList = data.cases;
 
 class Cases extends Component {
-  state = {
-    cases: storeProducts
+  constructor(props) {
+    super(props);
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+  handleClick = e => {
+    e.preventDefault();
+    console.log("item added to cart");
   };
+
   render() {
-    console.log(this.state.cases);
+    let casesArray = caseList.map(c => (
+      <li className="col-sm-3" key={c.id}>
+        <img src={c.img} alt="ada" />
+        {c.company}
+        <br />
+        {c.price}
+        {c.currency}
+        <button className={"btn btn-primary"} onClick={this.handleClick}>
+          AddToCart
+        </button>
+      </li>
+    ));
     return (
       <div>
         <h1> Our Computer Case List </h1>
-        {/* <img
-          src={process.env.PUBLIC_URL + "/images/cases/corsair.jpg"}
-          alt="case1"
-          width="200px"
-          height="200px"
-        />
-        <img
-          src={process.env.PUBLIC_URL + "/images/cases/DIYpc.jpg"}
-          alt="case2"
-          width="200px"
-          height="200px"
-        />
-        <img
-          src={process.env.PUBLIC_URL + "/images/cases/NZXT.jpg"}
-          alt="case3"
-          width="200px"
-          height="200px"
-        />
-        <img
-          src={process.env.PUBLIC_URL + "/images/cases/rosewill.jpg"}
-          alt="case4"
-          width="200px"
-          height="200px"
-        />
-        <img
-          src={process.env.PUBLIC_URL + "/images/cases/thermaltake.jpg"}
-          alt="case5"
-          width="200px"
-          height="200px"
-        /> */}
+        <ul className="items-ul">{casesArray}</ul>
       </div>
     );
   }

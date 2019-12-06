@@ -1,5 +1,7 @@
 import React, { Component } from "react";
-
+import GraphicCard from "./GraphicCard";
+import Cases from "./Cases";
+import Cpu from "./Cpu";
 class Home extends Component {
   render() {
     return (
@@ -7,6 +9,9 @@ class Home extends Component {
         <h1>
           <strong>Our Products</strong>
         </h1>
+        <Cases />
+        <Cpu />
+        <GraphicCard />
       </div>
     );
   }
