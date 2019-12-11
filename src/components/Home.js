@@ -1,7 +1,9 @@
 import React, { Component } from "react";
-import GraphicCard from "./GraphicCard";
 import Cases from "./Cases";
 import Cpu from "./Cpu";
+import "../App.css";
+import Jokes from "./Jokes";
+
 class Home extends Component {
   render() {
     return (
@@ -9,9 +11,12 @@ class Home extends Component {
         <h1>
           <strong>Our Products</strong>
         </h1>
-        <Cases />
-        <Cpu />
-        <GraphicCard />
+        <div className="items">
+          <Cases />
+          <Cpu />
+          <hr />
+          <Jokes />
+        </div>
       </div>
     );
   }

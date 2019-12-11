@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { connect } from "react-redux";
 import data from "../data";
 
 const caseList = data.cases;
@@ -16,12 +17,14 @@ class Cases extends Component {
 
   render() {
     let casesArray = caseList.map(c => (
-      <li className="col-sm-3" key={c.id}>
+      <li className="cases1" key={c.id}>
         <img src={c.img} alt="ada" />
         {c.company}
         <br />
-        {c.price}
-        {c.currency}
+        <div className="price">
+          {c.price}
+          {c.currency}
+        </div>
         <button className={"btn btn-primary"} onClick={this.handleClick}>
           AddToCart
         </button>

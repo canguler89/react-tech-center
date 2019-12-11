@@ -14,12 +14,14 @@ class Cpu extends Component {
         <h2>CPU LIST IN HERE</h2>
         <ul className="items-ul">
           {CpuList.map(cp => (
-            <li className="col-sm-3">
+            <li className="cases1">
               <img src={cp.img} alt="cpus" />
               {cp.title}
               <br />
-              {cp.price}
-              {cp.currency}
+              <div className="price">
+                {cp.price}
+                {cp.currency}
+              </div>
               <button className={"btn btn-primary"} onClick={this.handleClick}>
                 AddToCart
               </button>
