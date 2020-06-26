@@ -1,39 +1,28 @@
 import React, { Component } from "react";
+import data from "../data";
+
+const hdList = data.hardDrives;
 
 class HardDrives extends Component {
   render() {
     return (
       <div>
-        <img
-          src={process.env.PUBLIC_URL + "/images/hard-disk/samsung 1tb ssd.jpg"}
-          alt="disk1"
-          width="200px"
-          height="200px"
-        />
-        <img
-          src={process.env.PUBLIC_URL + "/images/hard-disk/samsung ssd 2tb.jpg"}
-          alt="disk2"
-          width="200px"
-          height="200px"
-        />
-        <img
-          src={process.env.PUBLIC_URL + "/images/hard-disk/wd black1tb.jpg"}
-          alt="disk1"
-          width="200px"
-          height="200px"
-        />
-        <img
-          src={process.env.PUBLIC_URL + "/images/hard-disk/seagate 1tb.jpg"}
-          alt="disk1"
-          width="200px"
-          height="200px"
-        />
-        <img
-          src={process.env.PUBLIC_URL + "/images/hard-disk/exos.jpg"}
-          alt="disk1"
-          width="200px"
-          height="200px"
-        />
+        <ul id="items-ul">
+          {hdList.map((card) => (
+            <li id="cases1">
+              <img src={card.img} alt="hds" />
+              {card.title}
+              <br />
+              <div className="price">
+                {card.price}
+                {card.currency}
+              </div>
+              <button className={"btn btn-primary"} onClick={this.handleClick}>
+                AddToCart
+              </button>
+            </li>
+          ))}
+        </ul>
       </div>
     );
   }

@@ -1,20 +1,16 @@
-import React, { Component } from "react";
+import React from "react";
 import data from "../data";
 
 const CpuList = data.cpus;
 
-class Cpu extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
+class Cpu extends React.Component {
   render() {
     return (
       <div>
         <h2>CPU LIST IN HERE</h2>
-        <ul className="items-ul">
-          {CpuList.map(cp => (
-            <li className="cases1">
+        <ul id="items-ul">
+          {CpuList.map((cp) => (
+            <li id="cases1">
               <img src={cp.img} alt="cpus" />
               {cp.title}
               <br />
@@ -22,9 +18,7 @@ class Cpu extends Component {
                 {cp.price}
                 {cp.currency}
               </div>
-              <button className={"btn btn-primary"} onClick={this.handleClick}>
-                AddToCart
-              </button>
+              <button className={"btn btn-primary"}>AddToCart</button>
             </li>
           ))}
         </ul>

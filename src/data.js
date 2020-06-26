@@ -7,7 +7,7 @@ const data = {
       price: 10,
       currency: "USD",
       company: "Corsair",
-      inCart: false
+      inCart: false,
     },
     {
       id: 2,
@@ -16,7 +16,7 @@ const data = {
       price: 11,
       currency: "USD",
       company: "Corsair",
-      inCart: false
+      inCart: false,
     },
     {
       id: 3,
@@ -25,7 +25,7 @@ const data = {
       price: 12,
       currency: "USD",
       company: "Corsair",
-      inCart: false
+      inCart: false,
     },
     {
       id: 4,
@@ -34,7 +34,7 @@ const data = {
       price: 13,
       currency: "USD",
       company: "Corsair",
-      inCart: false
+      inCart: false,
     },
     {
       id: 5,
@@ -43,8 +43,8 @@ const data = {
       price: 14,
       currency: "USD",
       company: "Corsair",
-      inCart: false
-    }
+      inCart: false,
+    },
   ],
   cpus: [
     {
@@ -54,7 +54,7 @@ const data = {
       price: 100,
       currency: "USD",
       company: "intel",
-      inCart: false
+      inCart: false,
     },
     {
       id: 2,
@@ -63,7 +63,7 @@ const data = {
       price: 110,
       currency: "USD",
       company: "intel",
-      inCart: false
+      inCart: false,
     },
     {
       id: 3,
@@ -72,7 +72,7 @@ const data = {
       price: 120,
       currency: "USD",
       company: "intel",
-      inCart: false
+      inCart: false,
     },
     {
       id: 4,
@@ -81,7 +81,7 @@ const data = {
       price: 130,
       currency: "USD",
       company: "intel",
-      inCart: false
+      inCart: false,
     },
     {
       id: 5,
@@ -90,7 +90,7 @@ const data = {
       price: 80,
       currency: "USD",
       company: "intel",
-      inCart: false
+      inCart: false,
     },
     {
       id: 6,
@@ -99,8 +99,8 @@ const data = {
       price: 90,
       currency: "USD",
       company: "intel",
-      inCart: false
-    }
+      inCart: false,
+    },
   ],
   cards: [
     {
@@ -110,7 +110,7 @@ const data = {
       price: 190,
       currency: "USD",
       company: "evga",
-      inCart: false
+      inCart: false,
     },
     {
       id: 2,
@@ -119,7 +119,7 @@ const data = {
       price: 290,
       currency: "USD",
       company: "evga",
-      inCart: false
+      inCart: false,
     },
     {
       id: 3,
@@ -128,7 +128,7 @@ const data = {
       price: 390,
       currency: "USD",
       company: "evga",
-      inCart: false
+      inCart: false,
     },
     {
       id: 4,
@@ -137,7 +137,7 @@ const data = {
       price: 490,
       currency: "USD",
       company: "evga",
-      inCart: false
+      inCart: false,
     },
     {
       id: 5,
@@ -146,8 +146,55 @@ const data = {
       price: 590,
       currency: "USD",
       company: "evga",
-      inCart: false
-    }
-  ]
+      inCart: false,
+    },
+  ],
+  hardDrives: [
+    {
+      id: 1,
+      title: "Samsung ssd 2tb",
+      img: "/images/hard-disk/2tb.jpg",
+      price: 200,
+      currency: "USD",
+      company: "Samsung",
+      inCart: false,
+    },
+    {
+      id: 2,
+      title: "Samsung ssd 4tb",
+      img: "/images/hard-disk/4tb.jpg",
+      price: 400,
+      currency: "USD",
+      company: "Samsung",
+      inCart: false,
+    },
+    {
+      id: 3,
+      title: "Seagate 1tb",
+      img: "/images/hard-disk/seagate1tb.jpg",
+      price: 79,
+      currency: "USD",
+      company: "Seagate",
+      inCart: false,
+    },
+    {
+      id: 4,
+      title: "Wd Black 1tb",
+      img: "/images/hard-disk/wd1tb.jpg",
+      price: 89,
+      currency: "USD",
+      company: "Samsung",
+      inCart: false,
+    },
+    {
+      id: 5,
+      title: "Samsung ssd 4tb",
+      img: "/images/hard-disk/wd1tbssd.jpg",
+      price: 400,
+      currency: "USD",
+      company: "Samsung",
+      inCart: false,
+    },
+  ],
 };
 export default data;

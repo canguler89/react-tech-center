@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import Cases from "./Cases";
-import Cpu from "./Cpu";
-import "../App.css";
+// import "../App.css";
 import Jokes from "./Jokes";
 
 class Home extends Component {
@@ -13,7 +12,6 @@ class Home extends Component {
         </h1>
         <div className="items">
           <Cases />
-          <Cpu />
           <hr />
           <Jokes />
         </div>

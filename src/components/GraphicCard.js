@@ -7,17 +7,17 @@ class GraphicCard extends Component {
   render() {
     return (
       <div>
-        <ul className="items-ul">
-          {cardList.map(card => (
-            <li className="col-sm-3">
-              <img src={card.img} alt="cpus" />
-              {card.title}
+        <ul id="items-ul">
+          {cardList.map((data) => (
+            <li id="cases1">
+              <img src={data.img} alt="cpus" />
+              {data.title}
               <br />
-              {card.price}
-              {card.currency}
-              <button className={"btn btn-primary"} onClick={this.handleClick}>
-                AddToCart
-              </button>
+              <div className="price">
+                {data.price}
+                {data.currency}
+              </div>
+              <button className={"btn btn-primary"}>AddToCart</button>
             </li>
           ))}
         </ul>
